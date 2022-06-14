@@ -36,15 +36,15 @@ int main( ) {
 	// Test QWERTY
 	QWERTY k_q;
 	// Curious, the templated type cannot be deduced here, I wonder why..
-	test( (Keyboard<QWERTY_Estimate> & )k_q );
+	//test( (Keyboard<QWERTY_Estimate> & )k_q );
 
 	Colemak k_c;
-	test( ( Keyboard<QWERTY_Estimate> & )k_c );
+	//test( ( Keyboard<QWERTY_Estimate> & )k_c );
 
 	Dvorak k_d;
-	test( ( Keyboard<QWERTY_Estimate> & )k_d );
+	//test( ( Keyboard<QWERTY_Estimate> & )k_d );
 
-	std::initializer_list<std::pair<const char, Key>> k = { { 'a', Key( 0, 0, 0 ) } };
-	std::map<char, Key> m ( k );
+	GKOS k_g;
+	test( ( Keyboard<GKOS_Estimate> & )k_g );
 
 }
