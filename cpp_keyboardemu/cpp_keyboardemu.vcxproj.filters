@@ -48,5 +48,8 @@
     <None Include="epub_to_text.py">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="GKOS.xlsx">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
